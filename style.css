@@ -1,0 +1,126 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+/**** NAV ****/
+
+nav ul{
+    width: 100%;
+    background-color: #ac5463;
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: all 1s ease-in-out; 
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li:hover {
+    background-color: #ac5480;
+}
+
+.menu-bars{
+    width: 100%;
+    background-color: #005c48;
+    text-align: right;
+    box-shadow: border-box;
+    padding: 20px 0px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.menu-bars .fas{
+    margin-right: 20px;
+}
+
+/**** RESPONSIVE ****/
+
+@media screen and (max-width: 812px){
+    
+    nav ul{
+        max-height: 0px;
+        position: fixed;
+        bottom: 4.5em;
+    }
+   
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+  
+    .menu-bars{
+        display: block;
+        position: fixed;
+        bottom: 0;
+    }
+    
+    .showing{
+        max-height: 20em;
+        position: fixed;
+        bottom: 4.5em;  
+    }
+}
